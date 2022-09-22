@@ -3,15 +3,21 @@
 
 :root {
     --black: #000;
+    --white: #fff;
+    --bg-color: #333;
 
     --font-family: 'Montserrat', sans-serif;
 
-    --tw-ring-inset: var(--tw-empty, /*!*/ /*!*/);
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: rgba(59, 130, 246, 0.5);
-    --tw-ring-offset-shadow: 0 0 transparent;
-    --tw-ring-shadow: 0 0 transparent;
+    // --tw-ring-inset: var(--tw-empty, /*!*/ /*!*/);
+    // --tw-ring-offset-width: 0px;
+    // --tw-ring-offset-color: #fff;
+    // --tw-ring-color: rgba(59, 130, 246, 0.5);
+    // --tw-ring-offset-shadow: 0 0 transparent;
+    // --tw-ring-shadow: 0 0 transparent;
+
+    // Default layout
+    --default-layout-width: 1392px;
+    --default-layout-header-height: 68px;
 }
 
 * {
@@ -27,6 +33,21 @@ html {
 body {
     font-family: var(--font-family);
     font-size: 1.6rem;
-    line-height: 1.15;
+    line-height: inherit;
     text-rendering: optimizeSpeed;
+}
+
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
 }

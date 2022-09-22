@@ -1,0 +1,93 @@
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--default-layout-header-height);
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    z-index: 99;
+}
+
+.inner {
+    height: 100%;
+    width: var(--default-layout-width);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 117px;
+}
+
+.menu {
+    display: flex;
+    cursor: pointer;
+    a {
+        color: var(--white);
+        font-size: 1.5rem;
+        line-height: 1.25rem;
+        font-weight: 700;
+        padding: 0.5rem 2rem;
+    }
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    padding: 0 1.75rem;
+}
+
+.actions {
+    padding: 0 2.4rem;
+    &::after {
+        content: '';
+        width: 1px;
+        height: 40px;
+        top: 1.4rem;
+        margin-left: 2.4rem;
+        background-color: var(--white);
+        position: absolute;
+    }
+}
+
+.search-btn,
+.user-btn,
+.bag-btn {
+    font-size: 2.4rem;
+    padding: 0 1.4rem;
+    color: var(--white);
+    background: transparent;
+    cursor: pointer;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    cursor: pointer;
+
+    .change-language {
+        .english {
+            font-size: 1.2rem;
+            line-height: 1rem;
+            padding: 0.5rem 2rem;
+        }
+    }
+
+    .lang-text {
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        line-height: 1.25rem;
+        padding-left: 2.4rem;
+    }
+    .lang-btn {
+        font-size: 0.8rem;
+        padding: 1rem;
+        background: transparent;
+        color: var(--white);
+        cursor: pointer;
+    }
+}
