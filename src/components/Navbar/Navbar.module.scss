@@ -1,0 +1,43 @@
+.wrapper {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3rem;
+    position: relative;
+}
+
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.menu {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.menu-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .wrap-item {
+        padding: 1.25rem 3rem;
+    }
+
+    a {
+        color: #b9bbbf;
+        font-size: 1.4rem;
+        line-height: 1.25rem;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    a:active {
+        text-decoration: red;
+        color: var(--black);
+    }
+
+    a:hover {
+        opacity: 0.6;
+    }
+}

@@ -37,14 +37,13 @@
 .header-actions {
     display: flex;
     align-items: center;
-    padding: 0 1.75rem;
 }
 
 .actions {
     padding: 0 2.4rem;
     &::after {
         content: '';
-        width: 1px;
+        width: 0.05rem;
         height: 40px;
         top: 1.4rem;
         margin-left: 2.4rem;
@@ -82,10 +81,10 @@
         font-size: 1.4rem;
         line-height: 1.25rem;
         padding-left: 2.4rem;
+        margin-right: 0.5rem;
     }
     .lang-btn {
         font-size: 0.8rem;
-        padding: 1rem;
         background: transparent;
         color: var(--white);
         cursor: pointer;

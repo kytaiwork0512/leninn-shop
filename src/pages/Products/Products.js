@@ -1,5 +1,17 @@
+import classNames from 'classnames/bind';
+
+import styles from './Products.module.scss';
+import Navbar from '~/components/Navbar';
+
+const cx = classNames.bind(styles);
+
 function Products() {
-    return <h2>Products Page</h2>;
+    return (
+        <div className={cx('wrapper')}>
+            <Navbar />
+            <h2>Products Page</h2>
+        </div>
+    );
 }
 
 export default Products;

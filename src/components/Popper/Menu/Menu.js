@@ -13,17 +13,20 @@ function Menu({ children, items = [] }) {
     };
 
     return (
-        <Tippy
-            placement="bottom-end"
-            interactive
-            render={(attrs) => (
-                <div className={cx('content')} tabIndex="-1" {...attrs}>
-                    <PopperWrapper>{renderItems()}</PopperWrapper>
-                </div>
-            )}
-        >
-            {children}
-        </Tippy>
+        /* Using a wrapper <div> tag around the reference element solves this by creating a new parentNode context. */
+        <div>
+            <Tippy
+                placement="bottom-end"
+                interactive
+                render={(attrs) => (
+                    <div className={cx('content')} tabIndex="-1" {...attrs}>
+                        <PopperWrapper>{renderItems()}</PopperWrapper>
+                    </div>
+                )}
+            >
+                {children}
+            </Tippy>
+        </div>
     );
 }
 

@@ -40,7 +40,7 @@ const cx = classNames.bind(styles);
 const MENU_ITEMS = [
     {
         title: 'ACCESSORIES',
-        to: '/accessories',
+        to: 'products/accessories',
     },
     {
         title: 'CLOTHING',
@@ -61,7 +61,7 @@ const MENU_ITEMS = [
     },
     {
         title: 'DECK',
-        to: '/deck',
+        to: 'products/deck',
     },
     {
         title: 'S/S2022',
@@ -88,7 +88,7 @@ const Header = () => {
                     <div className={cx('menu')}>
                         <Menu items={MENU_ITEMS}>
                             <div className={cx('menu-item')}>
-                                <a href="/">SẢN PHẨM</a>
+                                <a href="/products">SẢN PHẨM</a>
                             </div>
                         </Menu>
                         <div className={cx('menu-item-2')}>
@@ -114,19 +114,22 @@ const Header = () => {
                         </Link>
                     </div>
                     <div className={cx('language')}>
-                        <Tippy
-                            interactive
-                            placement="bottom-end"
-                            render={(attrs) => (
-                                <div className={cx('change-language')} tabIndex="-1" {...attrs}>
-                                    <PopperWrapper>
-                                        <h4 className={cx('english')}>TIẾNG ANH</h4>
-                                    </PopperWrapper>
-                                </div>
-                            )}
-                        >
-                            <h4 className={cx('lang-text')}>VNI</h4>
-                        </Tippy>
+                        {/* Using a wrapper <div> tag around the reference element solves this by creating a new parentNode context. */}
+                        <div>
+                            <Tippy
+                                interactive
+                                placement="bottom-end"
+                                render={(attrs) => (
+                                    <div className={cx('change-language')} tabIndex="-1" {...attrs}>
+                                        <PopperWrapper>
+                                            <h4 className={cx('english')}>TIẾNG ANH</h4>
+                                        </PopperWrapper>
+                                    </div>
+                                )}
+                            >
+                                <h4 className={cx('lang-text')}>VNI</h4>
+                            </Tippy>
+                        </div>
                         <button className={cx('lang-btn')}>
                             <FontAwesomeIcon icon={faAngleDown} />
                         </button>

@@ -16,6 +16,8 @@ const publicRoutes = [
     { path: '/catalog', component: Catalog },
 ];
 
+const productsRoutes = [];
+
 const privateRoutes = [];
 
-export { publicRoutes, privateRoutes };
+export { publicRoutes, privateRoutes, productsRoutes };
