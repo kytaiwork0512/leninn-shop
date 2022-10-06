@@ -6,6 +6,10 @@ import About from '~/pages/About';
 import Cart from '~/pages/Cart';
 import Catalog from '~/pages/Catalog';
 
+import Accessories from '~/pages/Accessories';
+import Clothing from '~/pages/Clothing';
+import Deck from '~/pages/Deck';
+
 const publicRoutes = [
     { path: '/', component: Home },
     { path: '/products', component: Products },
@@ -14,6 +18,10 @@ const publicRoutes = [
     { path: '/about', component: About },
     { path: '/cart', component: Cart },
     { path: '/catalog', component: Catalog },
+
+    { path: '/products/accessories', component: Accessories },
+    { path: '/products/clothing', component: Clothing },
+    { path: '/products/deck', component: Deck },
 ];
 
 const productsRoutes = [];

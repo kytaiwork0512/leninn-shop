@@ -84,6 +84,7 @@ const Header = () => {
                 <Link to={'/'}>
                     <img className={cx('logo')} src={images.logo} alt="logo-leninn" />
                 </Link>
+
                 <div className={cx('header-menu')}>
                     <div className={cx('menu')}>
                         <Menu items={MENU_ITEMS}>

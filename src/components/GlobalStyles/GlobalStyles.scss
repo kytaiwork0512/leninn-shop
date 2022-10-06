@@ -5,6 +5,7 @@
     --black: #000;
     --white: #fff;
     --bg-color: #333;
+    --bg-color-footer: #f7f7f7;
 
     --font-family: 'Montserrat', sans-serif;
 
@@ -16,12 +17,15 @@
     // --tw-ring-shadow: 0 0 transparent;
 
     // Default layout
-    --default-layout-width: 1392px;
+    --default-layout-max-width: 1392px;
+    --default-layout-width: 1200px;
     --default-layout-header-height: 68px;
+    --default-footer-layout-height: 218px;
 }
 
 * {
     box-sizing: border-box;
+    line-height: inherit;
     padding: 0;
     margin: 0;
 }
@@ -49,5 +53,6 @@ ul {
 }
 
 a {
+    color: inherit;
     text-decoration: none;
 }
