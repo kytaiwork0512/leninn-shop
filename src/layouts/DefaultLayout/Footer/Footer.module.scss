@@ -1,0 +1,59 @@
+.wrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: var(--default-footer-layout-height);
+    background-color: var(--bg-color-footer);
+    justify-content: center;
+    z-index: 99;
+}
+
+.container {
+    max-width: var(--default-layout-width);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.gird-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 3rem 1rem;
+}
+
+.grid-item {
+    font-size: 1.4rem;
+    font-weight: 300;
+    .privacy-policy,
+    .address,
+    .follow {
+        margin-bottom: 1rem;
+    }
+    .policy-btn {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-right: 1rem;
+    }
+    span {
+        font-weight: 600;
+    }
+    .media {
+        img {
+            margin-top: 1rem;
+            margin-right: 2rem;
+        }
+    }
+}
+
+.copyright {
+    border-top: solid #d1d5db 1px;
+    text-align: center;
+    border-top-width: 1px;
+    padding: 2rem 0;
+    .text {
+        color: #b9bbbf;
+        font-size: 1.4rem;
+        font-weight: 100;
+    }
+}

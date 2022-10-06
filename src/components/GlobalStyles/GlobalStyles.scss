@@ -1,0 +1,58 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap');
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --bg-color: #333;
+    --bg-color-footer: #f7f7f7;
+
+    --font-family: 'Montserrat', sans-serif;
+
+    // --tw-ring-inset: var(--tw-empty, /*!*/ /*!*/);
+    // --tw-ring-offset-width: 0px;
+    // --tw-ring-offset-color: #fff;
+    // --tw-ring-color: rgba(59, 130, 246, 0.5);
+    // --tw-ring-offset-shadow: 0 0 transparent;
+    // --tw-ring-shadow: 0 0 transparent;
+
+    // Default layout
+    --default-layout-max-width: 1392px;
+    --default-layout-width: 1200px;
+    --default-layout-header-height: 68px;
+    --default-footer-layout-height: 218px;
+}
+
+* {
+    box-sizing: border-box;
+    line-height: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: 1.6rem;
+    line-height: inherit;
+    text-rendering: optimizeSpeed;
+}
+
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}

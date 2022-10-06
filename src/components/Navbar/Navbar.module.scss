@@ -1,0 +1,38 @@
+.wrapper {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+    position: relative;
+}
+
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.menu {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.menu-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .wrap-item {
+        padding: 1.25rem 3rem;
+    }
+
+    a {
+        color: #b9bbbf;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    a:hover {
+        opacity: 0.6;
+    }
+}
