@@ -1,8 +1,10 @@
 .section {
-    margin-bottom: 80px;
+    max-width: var(--default-layout-width);
+    margin: 30px auto;
+    position: relative;
 
     & > * ~ * {
-        margin-top: 70px;
+        margin-top: 20px;
     }
 
     &__title {
@@ -10,4 +12,8 @@
         text-transform: capitalize;
         text-align: center;
     }
+}
+
+.section__title {
+    margin-top: 50px;
 }

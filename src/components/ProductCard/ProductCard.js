@@ -17,22 +17,24 @@ const ProductCard = (props) => {
     return (
         <div className={cx('product-card')}>
             <Link to={`/catalog/${props.slug}`}>
-                <div className={cx('product-card__image')}>
-                    <img src={props.img01} alt="" />
-                </div>
-                <h3 className={cx('product-card__name')}>{props.name}</h3>
-                <div className={cx('product-card__price')}>
-                    {numberWithCommas(props.price)}
-                    <span className={cx('product-card__price__old')}>
-                        <del>{numberWithCommas(399000)}</del>
-                    </span>
+                <div className={cx('container')}>
+                    <div className={cx('product-card__image')}>
+                        <img src={props.img01} alt="" />
+                        <div className={cx('product-card__overlay')}></div>
+                        <div className={cx('product-card__info')}>
+                            <div>
+                                <h2 className={cx('product-card__name')}>{props.name}</h2>
+                                <div className={cx('product-card__price')}>
+                                    {numberWithCommas(props.price + ' ₫')}
+                                    {/* <span className={cx('product-card__price__old')}>
+                                    <del>{numberWithCommas(399000)}</del>
+                                </span> */}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </Link>
-            <div className={cx('product-card__btn')}>
-                {/* <Button size="sm" icon="bx bx-cart" animate={true} onClick={() => dispatch(set(props.slug))}>
-                    chọn mua
-                </Button> */}
-            </div>
         </div>
     );
 };
