@@ -1,12 +1,10 @@
 .product-card {
     text-align: center;
-    margin-bottom: 30px;
 
     &__image {
         position: relative;
         overflow: hidden;
         padding-top: 100%;
-        margin-bottom: 30px;
 
         img {
             position: absolute;
@@ -32,10 +30,10 @@
         font-weight: 400;
         margin-bottom: 10px;
 
-        &__old {
-            margin-left: 20px;
-            font-weight: 300;
-        }
+        // &__old {
+        //     margin-left: 20px;
+        //     font-weight: 300;
+        // }
     }
 }
 

@@ -5,7 +5,7 @@
 import Navbar from '~/components/Navbar';
 import Helmet from '~/components/Helmet';
 import Selection from '~/components/Section';
-import { SectionTitle, SectionBody } from '~/components/Section/Section';
+import { SectionBody, SectionFooter } from '~/components/Section/Section';
 import productData from '~/assets/fakedata/products';
 // import images from '~/assets/images';
 import Grid from '~/components/Grid';
@@ -25,7 +25,6 @@ const Products = (props) => {
         <Helmet title="Products">
             <Navbar />
             <Selection>
-                <SectionTitle>ALL PRODUCTS</SectionTitle>
                 <SectionBody>
                     <Grid col={4} mdCol={2} smCol={1} gap={20}>
                         {relatedProducts.map((item, index) => (
@@ -39,6 +38,7 @@ const Products = (props) => {
                         ))}
                     </Grid>
                 </SectionBody>
+                <SectionFooter>Bạn đã xem hết!</SectionFooter>
             </Selection>
         </Helmet>
     );

@@ -7,13 +7,10 @@
         margin-top: 20px;
     }
 
-    &__title {
-        font-size: 2rem;
-        text-transform: capitalize;
+    &__footer {
+        font-size: 1.6rem;
+        font-weight: 800;
         text-align: center;
+        padding-bottom: 20px;
     }
-}
-
-.section__title {
-    margin-top: 50px;
 }

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import productData from '~/assets/fakedata/products';
 import Grid from '~/components/Grid';
 import Helmet from '~/components/Helmet';
@@ -10,7 +8,7 @@ import { SectionBody, SectionTitle } from '~/components/Section/Section';
 const Home = () => {
     return (
         <Helmet title="Home page">
-            Home page
+            hero silder
             {/* hero silder */}
             {/* new arrival section */}
             <Section>
