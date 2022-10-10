@@ -19,7 +19,7 @@ const ProductCard = (props) => {
             <Link to={`/catalog/${props.slug}`}>
                 <div className={cx('container')}>
                     <div className={cx('product-card__image')}>
-                        <img src={props.img01} alt="" />
+                        <img src={props.img} alt="" />
                         <div className={cx('product-card__overlay')}></div>
                         <div className={cx('product-card__info')}>
                             <div>
@@ -40,7 +40,7 @@ const ProductCard = (props) => {
 };
 
 ProductCard.propTypes = {
-    img01: PropTypes.string.isRequired,
+    img: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
     slug: PropTypes.string.isRequired,
