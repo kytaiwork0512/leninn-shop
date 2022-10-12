@@ -1,4 +1,3 @@
-/* eslint-disable array-callback-return */
 import { Link } from 'react-router-dom';
 import classNames from 'classnames/bind';
 import Tippy from '@tippyjs/react/headless'; // different import path!
@@ -93,7 +92,7 @@ const Header = () => {
                             </div>
                         </Menu>
                         <div className={cx('menu-item-2')}>
-                            <a href="/sale">SALE</a>
+                            <a href="/saleoff">SALE</a>
                             <a href="/gallery">THƯ VIỆN</a>
                             <a href="/about">GIỚI THIỆU</a>
                         </div>

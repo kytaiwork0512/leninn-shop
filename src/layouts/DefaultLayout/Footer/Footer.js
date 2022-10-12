@@ -1,8 +1,8 @@
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
+
 import images from '~/assets/images';
 import styles from './Footer.module.scss';
 

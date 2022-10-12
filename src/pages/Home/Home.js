@@ -1,6 +1,8 @@
 import productData from '~/assets/fakedata/products';
 import Grid from '~/components/Grid';
 import Helmet from '~/components/Helmet';
+import HeroSlider from '~/components/HeroSlider';
+import heroSliderData from '~/assets/fakedata/hero-slider';
 import ProductCard from '~/components/ProductCard';
 import Section from '~/components/Section';
 import { SectionBody, SectionTitle } from '~/components/Section/Section';
@@ -8,9 +10,7 @@ import { SectionBody, SectionTitle } from '~/components/Section/Section';
 const Home = () => {
     return (
         <Helmet title="Home page">
-            hero silder
-            {/* hero silder */}
-            {/* new arrival section */}
+            <HeroSlider data={heroSliderData} control={true} auto={false} timeOut={5000} />
             <Section>
                 <SectionTitle>NEWEST ARRIVALS</SectionTitle>
                 <SectionBody>
