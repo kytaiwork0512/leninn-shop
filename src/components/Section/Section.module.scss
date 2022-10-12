@@ -1,0 +1,23 @@
+.section {
+    max-width: var(--default-layout-width);
+    margin: 30px auto;
+    position: relative;
+
+    & > * ~ * {
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        margin-left: 2px;
+        font-size: 1.8rem;
+        font-weight: 800;
+    }
+
+    &__footer {
+        font-size: 1.6rem;
+        font-weight: 800;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}

@@ -13,7 +13,7 @@ import Deck from '~/pages/Deck';
 const publicRoutes = [
     { path: '/', component: Home },
     { path: '/products', component: Products },
-    { path: '/sale', component: Sale },
+    { path: '/saleoff', component: Sale },
     { path: '/gallery', component: Gallery },
     { path: '/about', component: About },
     { path: '/cart', component: Cart },
