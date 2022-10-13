@@ -1,6 +1,6 @@
 .hero-slider {
     width: 100%;
-    max-height: 1070.55px;
+    height: 1070.55px;
     overflow: hidden;
     position: relative;
     margin-bottom: 50px;
@@ -15,15 +15,13 @@
         pointer-events: none;
         position: absolute;
         inset: 0;
+        cursor: pointer;
 
         &.active {
             opacity: 1;
             visibility: visible;
             pointer-events: visible;
-        }
-
-        &.active &__image > img {
-            transform: scale(1) rotate(0);
+            transition: all ease-in-out 2s;
         }
     }
 
@@ -39,6 +37,7 @@
         .prev-btn,
         .next-btn {
             cursor: pointer;
+            color: var(--white);
         }
 
         &__item ~ &__item {
@@ -47,6 +46,7 @@
 
         &__item {
             .index {
+                color: var(--white);
                 font-size: 1.5rem;
             }
         }

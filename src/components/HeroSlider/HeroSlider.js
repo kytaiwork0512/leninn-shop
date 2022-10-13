@@ -70,12 +70,13 @@ HeroSlider.propTypes = {
 };
 
 const HeroSliderItem = (props) => (
-    <div className={cx(`hero-slider__item ${props.active ? 'active' : ''}`)}>
-        <div className={cx('hero-slider__item__link')}>
-            <Link to={props.item.path}></Link>
-        </div>
-        <div className={cx('hero-slider__item__img')}>
-            <img src={props.item.img} alt="banner.jpg" />
+    <div className={cx(styles['hero-slider__item'], props.active ? styles.active : '')}>
+        <div className={cx(styles['hero-slider__item__img'])}>
+            <div className={cx(styles['hero-slider__item__link'])}>
+                <Link to={props.item.path}>
+                    <img src={props.item.img} alt="banner.jpg" />
+                </Link>
+            </div>
         </div>
     </div>
 );

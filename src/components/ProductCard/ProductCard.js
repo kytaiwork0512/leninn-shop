@@ -3,17 +3,12 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 
 import { Link } from 'react-router-dom';
-// import { useDispatch } from 'react-redux';
-// import { set } from '~/redux/product-modal/productModalSlice';
 import numberWithCommas from '~/utils/numberWithCommas';
-// import Button from '../Button';
 import styles from './ProductCard.module.scss';
 
 const cx = classNames.bind(styles);
 
 const ProductCard = (props) => {
-    // const dispatch = useDispatch();
-
     return (
         <div className={cx('product-card')}>
             <Link to={`/catalog/${props.slug}`}>
@@ -40,10 +35,12 @@ const ProductCard = (props) => {
 };
 
 ProductCard.propTypes = {
+    id: PropTypes.string.isRequired,
     img: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
     slug: PropTypes.string.isRequired,
+    categorySlug: PropTypes.string.isRequired,
 };
 
 export default ProductCard;
